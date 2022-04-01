@@ -1,0 +1,13 @@
+drop table propinsi cascade; 
+
+create table propinsi (
+	prop_id serial,
+	prop_key varchar(255),
+	prop_value varchar(255),
+	prop_url_image varchar(255),
+	constraint prop_id_pk primary key(prop_id)
+);
+
+insert into propinsi (prop_key, prop_value, prop_url_image) values ('aceh','aceh','aceh.jpg');
+
+select * from propinsi
